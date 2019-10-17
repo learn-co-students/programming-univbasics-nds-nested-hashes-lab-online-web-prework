@@ -1,4 +1,4 @@
-# Nested Hashes Lab
+## Nested Hashes Lab
 
 ## Learning Goals
 
