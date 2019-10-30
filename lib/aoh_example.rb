@@ -12,21 +12,23 @@ return result
 end
 
 def literal_aoh
-  result=[DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
-  # Using Array literal syntax only, build a nested array that uses the data in
-  # held in the constants
+aoh=[{ name:  "Don Gately", occupation: "Live-in Staff" },
+{ name:  "Joelle van Dyne", occupation: "Radio Personality" },
+{ name:  "Pat Monteseian", occupation: "Staff" },
+{ name:  "Kate Gompert", occupation: "None" },
+{ name:  "Bruce Green", occupation: "Fan of Mildred" }]
 end
 
 def aoh_lookup(aoh, row, key)
-aoh[2]=("Pat Monteseian")
+aoh[row][key]
 
 
-return aoh[2] 
+return aoh[row][key]
 end
 
 
 
 def aoh_update(aoh, row, key, new_value)
-  aoh_update[1]={:name=>}{"Joelle van Dyne (PGOAT)"}
-  return aoh_update[1][:name]
+  aoh[row][key]=new_value
+  return aoh
 end
