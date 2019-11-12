@@ -9,17 +9,35 @@ BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }
 def assembled_aoh
   # Build an array that contains (or, "nests") the constants into a single
   # Array. Ruby constants are denoted by ALL_CAPS
+SINGLE_ARRAY = [DON_G = { name:  "Don Gately", occupation: "Live-in Staff" }
+JOELLE_VD = { name:  "Joelle van Dyne", occupation: "Radio Personality" }
+PAT_M =  { name:  "Pat Monteseian", occupation: "Staff" }
+KATE_G = { name:  "Kate Gompert", occupation: "None" }
+BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }]
 end
 
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
+  SINGLE_ARRAY = %w[DON_G = { name:  "Don Gately", occupation: "Live-in Staff" }
+JOELLE_VD = { name:  "Joelle van Dyne", occupation: "Radio Personality" }
+PAT_M =  { name:  "Pat Monteseian", occupation: "Staff" }
+KATE_G = { name:  "Kate Gompert", occupation: "None" }
+BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }].join(" ").capitalize
+  
 end
 
 def aoh_lookup(aoh, row, key)
+  SINGLE_ARRAY = [DON_G = { name:  "Don Gately", occupation: "Live-in Staff" }
+JOELLE_VD = { name:  "Joelle van Dyne", occupation: "Radio Personality" }
+PAT_M =  { name:  "Pat Monteseian", occupation: "Staff" }
+KATE_G = { name:  "Kate Gompert", occupation: "None" }
+BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }]
+SINGLE_ARRAY [2]
 end
 
 def aoh_update(aoh, row, key, new_value)
   # Update the AoH data at row and key to have the value of new_value
   # Return the updated AoH
+  SINGLE_ARRAY[1] = {name: "Joelle van Dyne (PGOAT)"}
 end
